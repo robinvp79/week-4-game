@@ -1,0 +1,46 @@
+html {
+	background: url('../images/background.jpg') no-repeat center fixed;
+	background-size: cover;
+}
+
+body {
+	background: none;
+}
+
+#instructions{
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	padding: 20px;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+}
+
+#compNumber,#wins,#losses,#message,#playerScore{
+	background-color: white;
+	padding: 15px;
+	margin: 20px;
+	height: 50px;
+	width: 200px;
+}
+
+#compNumber,#playerScore{
+	font-size: 150%;
+	text-align: center;
+}
+
+h2{
+	padding-left: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 764px) {
+	#red,#blue,#yellow,#green{
+		width: 100%;
+	}
+}
