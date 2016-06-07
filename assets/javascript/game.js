@@ -26,24 +26,28 @@ $( document ).ready(function() {
     $('#red').on('click',function(){
       counter = counter + redNumber;
       $('#playerScore').text(counter);
+      document.getElementById("audioPlay").play();
       checkWin();
     })
 
     $('#blue').on('click',function(){
       counter = counter + blueNumber;
       $('#playerScore').text(counter);
+      document.getElementById("audioPlay").play();
       checkWin();
     })    
 
     $('#yellow').on('click',function(){
       counter = counter + yellowNumber;
       $('#playerScore').text(counter);
+      document.getElementById("audioPlay").play();
       checkWin();
     })
 
     $('#green').on('click',function(){
       counter = counter + greenNumber;
       $('#playerScore').text(counter);
+      document.getElementById("audioPlay").play();
       checkWin();
     })
 
@@ -52,11 +56,13 @@ $( document ).ready(function() {
         $('#message').text('You Won!');
         winGames ++;
         $('#wins').text('Wins: ' + winGames);
+        document.getElementById("audioStart").play();
         resetGame();
       }else if( counter > numberToGuess){
         $('#message').text('You Lost!');
         lossGames ++;
         $('#losses').text('Losses: ' + lossGames);
+        document.getElementById("audioStart").play();
         resetGame();
       }
     }
